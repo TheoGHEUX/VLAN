@@ -225,3 +225,9 @@ footer a {
   margin-bottom: 8px;
   text-transform: uppercase;
 }
+
+.phase-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
