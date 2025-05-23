@@ -415,3 +415,46 @@ button:hover {
     background-color: #FACCBC;
 }
 
+/* Bouton menu hamburger - caché par défaut */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: auto;
+  color: #FACCBC;
+}
+
+/* Menu en mode mobile */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-item a {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
