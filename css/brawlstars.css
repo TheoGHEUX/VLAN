@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-/* Bannière en haut */
-.image.brawl {
-  background-image: url('../images/brawlstars1.jpeg'); /* ou un autre fond */
+.image_brawl {
+  background-image: url('../images/brawlstars1.jpg'); /* Remplace si nécessaire */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,31 +10,38 @@
   text-align: center;
   position: relative;
   margin-top: 100px;
-   height: 100%;
+  height: 100%;
 }
 
-.image.brawl h1,
-.image.brawl h2 {
+.image_brawl h1,
+.image_brawl h2 {
   position: relative;
   z-index: 1;
   margin: 0;
   font-weight: bold;
 }
 
-.image.brawl h1 {
+.image_brawl h1 {
   font-size: 48px;
   text-transform: uppercase;
   line-height: 1.2;
 }
 
-.image.brawl h2 {
+.image_brawl h2 {
   font-style: italic;
   font-size: 24px;
   margin-top: 12px;
 }
 
-/* Disposition du contenu principal */
-.chess-layout {
+.image_brawl::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.brawl-layout {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -45,7 +51,6 @@
   align-items: center;
 }
 
-/* Titre à gauche */
 .left-title {
   flex: 1 1 40%;
   text-align: left;
@@ -58,7 +63,6 @@
   line-height: 1.2;
 }
 
-/* Cartes à droite */
 .right-info {
   flex: 1 1 55%;
   display: flex;
@@ -69,10 +73,10 @@
 
 .info-card {
   flex: 1 1 calc(33% - 20px);
-  background-color: #FACCBC; /* couleur douce de ta palette */
+  background-color: #DB8D77;
   border-radius: 15px;
   padding: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
@@ -81,13 +85,12 @@
 }
 
 .info-card h3 {
-  color: #DB8D77;
+  color: #30243A;
   margin-bottom: 10px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .chess-layout {
+  .brawl-layout {
     flex-direction: column;
     text-align: center;
   }
@@ -109,4 +112,3 @@
     font-size: 36px;
   }
 }
-
