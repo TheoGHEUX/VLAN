@@ -35,6 +35,26 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         text-align: center;
         font-weight: 600;
+
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        
+        body {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+        
+        main {
+          flex: 1; /* prend tout l’espace restant */
+        }
+        
+        footer {
+          /* reste en bas */
+        }
       }
     </style>
 </head>
