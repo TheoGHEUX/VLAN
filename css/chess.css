@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 .image_chess {
   background-image: url('../images/chess1.png'); /* ou un autre fond */
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   color: #30243A;
   padding: 120px 20px;
