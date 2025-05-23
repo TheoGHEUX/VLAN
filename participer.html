@@ -5,14 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/vlan.css">
     <title>LA VLAN</title>
+    <script src="css/js.js"></script>
 </head>
 <body>
     <header>
         <div class="menu-item"><a href="index.html">Accueil</a></div>
         <div class="menu-item"><a href="regles.html">Règles</a></div>
-        <div class="menu-item"><a href="contact.html">Contact</a></div>
+        <div class="menu-item"><a href="contact.html">Sponsors</a></div>
         <div class="menu-item red-button"><a href="participer.html">Inscription</a></div>
     </header>
+
+    <br><br><br>
+    <h1>Inscrivez-vous !</h1>
+    <form id="form" action="https://formspree.io/f/movdzyaq" method="POST">
+        <p>
+            <label for="nom" class="label-text">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="prenom" class="label-text">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+            <label for="email" class="label-text">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+    
+            <button type="submit">Envoyer</button>
+        </p>
+    </form>
+
+    <div id="popup" class="popup">
+    <div class="popup-content">
+        <p><i>"Votre inscription a été enregistré !"</i></p>
+        <button onclick="closePopup()">Fermer</button>
+    </div>
+</div>
 
 </body>
 </html>
