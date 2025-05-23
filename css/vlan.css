@@ -477,3 +477,9 @@ button:hover {
   color: #FACCBC;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
