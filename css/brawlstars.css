@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-
 .image_brawl {
   background-image: url('../images/brawlstars1.png'); /* Remplace si nécessaire */
   background-size: contain;
@@ -63,6 +62,7 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+  margin : 0 20px 0 20px ;
 }
 
 .info-card {
