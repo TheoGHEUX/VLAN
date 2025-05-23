@@ -326,3 +326,42 @@ footer a:hover {
     flex: 1 1 100%;
   }
 }
+
+
+/* Pop-up */
+.popup {
+    display: none;  /* cache le popup */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    color: black;
+    padding: 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.popup button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
