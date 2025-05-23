@@ -2,7 +2,7 @@
 
 /* Bannière en haut */
 .image.brawl {
-  background-image: url('../images/brawlstars1.jpeg');
+  background-image: url('../images/brawlstars1.jpeg'); /* ou un autre fond */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,6 +10,8 @@
   padding: 120px 20px;
   text-align: center;
   position: relative;
+  margin-top: 100px;
+   height: 100%;
 }
 
 .image.brawl h1,
