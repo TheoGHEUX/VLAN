@@ -1,0 +1,57 @@
+/* Section Chess personnalisée */
+.chess-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.chess-section h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1b51f2;
+}
+
+.chess-section ul {
+  list-style: circle;
+  padding-left: 40px;
+}
+
+.chess-section li {
+  margin-bottom: 10px;
+}
+
+/* Lien utile */
+.chess-section a {
+  color: #3767fa;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.chess-section a:hover {
+  color: #1b51f2;
+}
+
+/* Image de fond pour Chess */
+.image.chess {
+  background-image: url('../images/chess.png');
+}
+
+/* Bonus : animation d'apparition douce */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chess-section,
+.inscription-final {
+  animation: fadeInUp 0.8s ease-out;
+}
