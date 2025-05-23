@@ -54,7 +54,8 @@ header {
 }
 
 .red-button a:hover {
-  background-color: #FACCBC;
+  background-color: #7B665B;
+  color: #30243A;
 }
 
 a {
