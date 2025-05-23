@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/brawlstars.css" />
     <title>Règles du tournoi - LA VLAN</title>
+    <style>
+      /* Ajouts CSS pour accordéon */
+      .info-card h3 {
+        cursor: pointer;
+        position: relative;
+        padding-right: 25px;
+        user-select: none;
+      }
+      .info-card h3::after {
+        content: '+';
+        position: absolute;
+        right: 10px;
+        font-size: 24px;
+        line-height: 1;
+        transition: transform 0.3s ease;
+      }
+      .info-card.active h3::after {
+        content: '−'; /* tiret quand actif */
+      }
+      .info-card ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        margin: 0;
+        padding-left: 20px;
+      }
+      .info-card.active ul {
+        max-height: 500px; /* assez grand pour dérouler */
+        margin-top: 10px;
+      }
+    </style>
 </head>
 <body>
     <header>
@@ -61,5 +92,15 @@
     <footer>
         <p><a href="#">Mentions légales</a> | <a href="#">Contact BDE</a> | <a href="#">Réseaux sociaux</a></p>
     </footer>
+
+    <script>
+      // Script JS pour accordéon simple
+      document.querySelectorAll('.info-card h3').forEach(header => {
+        header.addEventListener('click', () => {
+          const card = header.parentElement;
+          card.classList.toggle('active');
+        });
+      });
+    </script>
 </body>
 </html>
