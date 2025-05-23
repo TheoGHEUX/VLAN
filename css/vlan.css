@@ -330,29 +330,30 @@ footer a:hover {
 /* participer */
 
 form {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(46,41,55,0.8);
     padding: 2vw;
     border-radius: 3vw;
     width: 50%;
     margin: 0 auto;
     box-shadow: 0px 2vw 4vw rgba(0, 0, 0, 0.5);
+    color: #FACCBC;
 }
 input, select, textarea {
     width: 100%;
     padding: 1.5vw;
     margin: 1.5vw 0;
-    border: 0.5vw solid #ccc;
+    border: 0.5vw solid #DB8D77;
     border-radius: 1vw;
     box-sizing: border-box;
     font-size: 1.5vw;
 }
 
 input:focus, textarea:focus, select:focus {
-    border-color: #007BFF;
+    border-color: #FACCBC;
     outline: none;
 }
 button {
-    background-color: #007BFF;
+    background-color: #DB8D77;
     color: white;
     border: none;
     border-radius: 1vw;
@@ -363,7 +364,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #FACCBC;
 }
 
 .titre {
@@ -401,7 +402,7 @@ button:hover {
 }
 
 .popup button {
-    background-color: #007BFF;
+    background-color: #DB8D77;
     color: white;
     border: none;
     padding: 1vw 2vw;
@@ -411,6 +412,6 @@ button:hover {
 }
 
 .popup button:hover {
-    background-color: #0056b3;
+    background-color: #FACCBC;
 }
 
