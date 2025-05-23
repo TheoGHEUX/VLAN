@@ -37,6 +37,7 @@
 /* Image de fond pour Chess */
 .image.chess {
   background-image: url('../images/chess.png');
+  padding: 100px
 }
 
 /* Bonus : animation d'apparition douce */
