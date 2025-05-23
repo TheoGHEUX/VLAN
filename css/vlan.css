@@ -63,6 +63,26 @@ a {
   color: inherit;
 }
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+  }
+
+  .menu-item a {
+    font-size: 18px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+
 h1 {
   padding-top: 90px;
   text-align: center;
