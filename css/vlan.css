@@ -328,6 +328,56 @@ footer a:hover {
 }
 
 
+/* participer */
+
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2vw;
+    border-radius: 3vw;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 2vw 4vw rgba(0, 0, 0, 0.5);
+}
+input, select, textarea {
+    width: 100%;
+    padding: 1.5vw;
+    margin: 1.5vw 0;
+    border: 0.5vw solid #ccc;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 1vw;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.titre {
+    padding-bottom: 1vw;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.label-text {
+    font-size: 3vw;
+}
+
+
 /* Pop-up */
 .popup {
     display: none;  /* cache le popup */
