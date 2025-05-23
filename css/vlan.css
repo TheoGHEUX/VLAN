@@ -102,6 +102,34 @@ section {
   flex: 1;
   min-width: 250px;
   max-width: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.phase:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.phase-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white; /* Contraste élevé pour le texte sur l’image */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Lisibilité renforcée */
+  transition: transform 0.3s ease;
+}
+
+.phase:hover .phase-content {
+  transform: translateY(-5px); /* petit effet de "remontée" au survol */
 }
 
 .phase img {
