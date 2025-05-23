@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1b51f2;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-item {
+  margin-right: 50px;
+}
+
+.menu-item a {
+  display: block;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #3767fa;
+  border-radius: 10px;
+  padding: 14px 22px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.4s ease;
+}
+
+.menu-item a:hover {
+  background-color: #577ffa;
+}
+
+.red-button a {
+  background-color: #e81515;
+}
+
+.red-button a:hover {
+  background-color: #ed4545;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.presentation p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Phase section */
+.phases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 30px;
+}
+
+.phase {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.phase img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Listes */
+.conditions ul,
+.regles ul,
+.recompenses ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+.conditions h2,
+.regles h2,
+.recompenses h2 {
+  margin-bottom: 20px;
+}
+
+/* Appel à l'inscription */
+.inscription-final {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+}
+
+.cta-button {
+  background-color: #e81515;
+  color: white;
+  padding: 16px 30px;
+  border-radius: 12px;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c91414;
+}
+
+/* Footer */
+footer {
+  background-color: #1b51f2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+/* Section image de fond */
+.image {
+  background-image: url('../images/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.image h1, .image h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.phases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; /* permet de passer à la ligne sur petits écrans */
+  gap: 20px;
+  padding: 60px 20px;
+}
+
+.phase {
+  flex: 1 1 30%; /* base 30%, ajuste sur petits écrans */
+  min-width: 280px;
+  height: 250px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.phase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* filtre sombre */
+  z-index: 0;
+}
+
+.phase-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+.phase-content h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
