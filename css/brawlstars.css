@@ -2,8 +2,9 @@
 
 /* Bannière en haut */
 .image.brawl {
-  background-image: url('../images/brawlstars.jpg');
-  background-size: cover;
+  background-image: url('../images/brawlstars1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat
   background-position: center;
   color: #30243A;
   padding: 120px 20px;
