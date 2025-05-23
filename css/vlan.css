@@ -199,7 +199,7 @@ footer a:hover {
 /* Section image de fond */
 .image {
   width: 100vw;
-  background-image: url('../images/iut.jpeg'); /* ou 'bg.jpeg' selon où se trouve l’image */
+  background-image: url('../images/iut.jpg'); /* ou 'bg.jpeg' selon où se trouve l’image */
   background-size: cover;
   background-position: center;
   color: white;
