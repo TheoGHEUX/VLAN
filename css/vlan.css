@@ -6,14 +6,14 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #CEEFF4; /* Bleu pastel doux */
-  color: #8A0D1E; /* Rouge foncé pour le texte principal */
+  background-color: #C0BDBD; /* Bleu pastel doux */
+  color: #30243A; /* Rouge foncé pour le texte principal */
   font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #8A0D1E;
-  color: white;
+  background-color: #464155;
+  color: #FACCBC;
   padding: 40px 20px;
   display: flex;
   justify-content: center;
@@ -35,7 +35,8 @@ header {
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #DE2E4B;
+  background-color: #DB8D77;
+  color: #30243A;
   border-radius: 10px;
   padding: 14px 22px;
   color: inherit;
@@ -44,15 +45,15 @@ header {
 }
 
 .menu-item a:hover {
-  background-color: #F36D8F;
+  background-color: #FACCBC;
 }
 
 .red-button a {
-  background-color: #DE2E4B;
+  background-color: #DB8D77;
 }
 
 .red-button a:hover {
-  background-color: #F59FBD;
+  background-color: #FACCBC;
 }
 
 a {
@@ -148,20 +149,20 @@ section {
 
 /* Footer */
 footer {
-  background-color: #8A0D1E;
-  color: white;
+  background-color: #464155;
+  color: #FACCBC;
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: #F36D8F;
+  color: #DB8D77;
   margin: 0 10px;
   text-decoration: underline;
 }
 
 footer a:hover {
-  color: #DE2E4B; /* Rouge vif */
+  color: #FACCBC; /* Rouge vif */
 }
 /* Section image de fond */
 .image {
