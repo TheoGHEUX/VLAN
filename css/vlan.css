@@ -6,10 +6,13 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #CEEFF4; /* Bleu pastel doux */
+  color: #8A0D1E; /* Rouge foncé pour le texte principal */
+  font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #1b51f2;
+  background-color: #8A0D1E;
   color: white;
   padding: 40px 20px;
   display: flex;
@@ -32,7 +35,7 @@ header {
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #3767fa;
+  background-color: #DE2E4B;
   border-radius: 10px;
   padding: 14px 22px;
   color: inherit;
@@ -41,15 +44,15 @@ header {
 }
 
 .menu-item a:hover {
-  background-color: #577ffa;
+  background-color: #F36D8F;
 }
 
 .red-button a {
-  background-color: #e81515;
+  background-color: #DE2E4B;
 }
 
 .red-button a:hover {
-  background-color: #ed4545;
+  background-color: #F59FBD;
 }
 
 a {
@@ -145,18 +148,21 @@ section {
 
 /* Footer */
 footer {
-  background-color: #1b51f2;
+  background-color: #8A0D1E;
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: #ffffff;
+  color: #F36D8F;
   margin: 0 10px;
   text-decoration: underline;
 }
 
+footer a:hover {
+  color: #DE2E4B; /* Rouge vif */
+}
 /* Section image de fond */
 .image {
   width: 100vw;
