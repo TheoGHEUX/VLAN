@@ -217,10 +217,9 @@ footer a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* filtre sombre */
+  background-color: rgba(0, 0, 0, 0.3); /* filtre sombre */
   z-index: 0;
 }
-
 .phase-content {
   position: relative;
   z-index: 1;
