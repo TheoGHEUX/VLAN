@@ -1,119 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-
-
-
-.chess-section ul {
-  list-style: circle;
-  padding-left: 40px;
-}
-
-.chess-section li {
-  margin-bottom: 10px;
-}
-
-/* Lien utile */
-.chess-section a {
-  color: #3767fa;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-.chess-section a:hover {
-  color: #1b51f2;
-}
-
-
-/* Bonus : animation d'apparition douce */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-
-.image.chess {
-  background-image: url('../images/chess.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 120px 20px;
-  text-align: center;
-  position: relative;
-}
-
-.image.chess::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-}
-
-.image.chess h1,
-.image.chess h2 {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  font-size: 40px;
-}
-
-.chess-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 60px 20px;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.chess-section h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #1b51f2;
-}
-
-.chess-details {
+.chess-layout {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: center;
-  margin-top: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
 }
 
-.info-box {
-  background: #f0f4ff;
+.left-title {
+  flex: 1 1 40%;
+  text-align: left;
+}
+
+.left-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #1b51f2;
+  line-height: 1.2;
+}
+
+.right-info {
+  flex: 1 1 55%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.info-card {
+  flex: 1 1 calc(33% - 20px);
+  background-color: #f0f4ff;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  flex: 1 1 300px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.info-box h3 {
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
   color: #1b51f2;
   margin-bottom: 10px;
 }
 
-.iframe-container {
-  margin-top: 50px;
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
+@media (max-width: 768px) {
+  .chess-layout {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  .left-title {
+    flex: 1 1 100%;
+  }
+
+  .right-info {
+    flex: 1 1 100%;
+    flex-direction: column;
+  }
+
+  .info-card {
+    flex: 1 1 100%;
+  }
+
+  .left-title h1 {
+    font-size: 36px;
+  }
 }
