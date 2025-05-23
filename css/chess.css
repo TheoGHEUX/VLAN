@@ -3,7 +3,7 @@
   background-image: url('../images/chess.png'); /* ou un autre fond */
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #30243A;
   padding: 120px 20px;
   text-align: center;
   position: relative;
@@ -54,7 +54,7 @@
 .left-title h1 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
-  color: #1b51f2;
+  color: #30243A;
   line-height: 1.2;
 }
 
@@ -68,7 +68,7 @@
 
 .info-card {
   flex: 1 1 calc(33% - 20px);
-  background-color: #f0f4ff;
+  background-color: #DB8D77;
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -80,7 +80,7 @@
 }
 
 .info-card h3 {
-  color: #1b51f2;
+  color: #30243A;
   margin-bottom: 10px;
 }
 
