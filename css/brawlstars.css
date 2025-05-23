@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 .image_brawl {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centre verticalement */
-  align-items: center;     /* centre horizontalement */
-  height: 300px;           /* hauteur fixe pour que ça fonctionne */
-  background-image: none !important;
-  background-color: #30243A;
-  padding: 0 20px;
+  background-image: url('../images/brawlstars1.png'); /* Remplace si nécessaire */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #FACCBC;
+  padding: 120px 20px;
   text-align: center;
   position: relative;
-  margin-top: 100px;
+  margin-top: 200px;
+  height: 100%;
 }
+
 
 .image_brawl h1,
 .image_brawl h2 {
