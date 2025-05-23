@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 .image_brawl {
-  background-image: url('../images/brawlstars1.jpg'); /* Remplace si nécessaire */
+  background-image: url('../images/brawlstars1.jpeg'); /* Remplace si nécessaire */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
